@@ -1,3 +1,22 @@
-[gd_scene format=3 uid="uid://cv8kaqnaoswld"]
+[gd_scene load_steps=3 format=3 uid="uid://cv8kaqnaoswld"]
+
+[ext_resource type="Script" path="res://Scripts/textbox.gd" id="1_rcloj"]
+[ext_resource type="Texture2D" uid="uid://dsxg8frhuljkb" path="res://Textures/TextBackingTex.png" id="2_nwmx0"]
 
 [node name="MainGameScene" type="Node2D"]
+
+[node name="Textbox" type="Node2D" parent="."]
+script = ExtResource("1_rcloj")
+
+[node name="TextBackground" type="Sprite2D" parent="Textbox"]
+texture = ExtResource("2_nwmx0")
+centered = false
+
+[node name="TextDisplay" type="Label" parent="Textbox/TextBackground"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
