@@ -1,0 +1,34 @@
+{
+	"scene": "Scene1",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"", "", ""
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"options": ["go_text_2", "go_text_3"],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"", "", ""
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"options": [],
+		"next_dialogue": "end"
+	},
+	"text_3": {
+		"lines": [
+			"", "", ""
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"options": [],
+		"next_dialogue": "end"
+	},
+}
