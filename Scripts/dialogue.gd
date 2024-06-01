@@ -3,6 +3,8 @@ class_name Dialogue
 var text_segments: Array;
 var text_speeds: Array;
 var expressions: Array;
+var options: Array;
+var next_dialogue: Array;
 var in_progress: bool;
 var typing_text: bool;
 var current_textbox: TextBox;
@@ -10,10 +12,12 @@ var current_frankie: Frankie;
 var dialogue_index: int;
 var line_finish_callback = Callable(self, "line_finish");
 
-func _init(text_segments, text_speeds, expressions):
+func _init(text_segments: Array, text_speeds: Array, expressions: Array, options: Array, next_dialogue: Array):
 	self.text_segments = text_segments;
 	self.text_speeds = text_speeds;
 	self.expressions = expressions;
+	self.options = options;
+	self.next_dialogue = next_dialogue;
 	self.in_progress = false;
 	self.typing_text = false;
 

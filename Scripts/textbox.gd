@@ -13,13 +13,15 @@ func _ready():
 	
 func type_text(text, speed, completion_callback: Callable) -> void:
 	text_display.text = "";
+	if(speed <= 0):
+		speed = 0.000001;
 	for character in text:
 		if(cancel_typing_flag):
 			cancel_typing_flag = false;
 			return;
 		text_display.text += character;
 		if(character != " "):
-			await get_tree().create_timer(speed).timeout
+			await get_tree().create_timer(1/speed).timeout
 	completion_callback.call();
 
 func force_text(text) -> void:
