@@ -1,0 +1,81 @@
+{
+    "scene": "Dorm",
+    "initial_dialogue": "text_1",
+    "text_1": {
+        "lines": [
+            "Frankie wanted to work on this project again the next day? Thats so weird. And this time, they wanted to work in their dorm. Well, here goes nothin!",
+            "*You knock on the door, and Frankie answers.*",
+            "Frankie: 'Hey there Protag-kun! You're early this time, haha!'"
+        ],
+        "speeds": [
+            1, 1, 1
+        ],
+        "options": ["Yea, wouldn't wanna turn the project in late, now would we, haha!", "Of course, I'm really fast! I mean uhh...", "You're hot and I wanna kiss you 🤤"],
+        "next_dialogue": ["text_2", "text_3", "text_4"]
+    },
+    "text_2": {
+        "lines": [
+            "'Right! Now lets get working!'"
+        ],
+        "speeds": [
+            1 
+        ],
+        "options": [],
+        "next_dialogue": ["text_5"]
+    },
+    "text_3": {
+        "lines": [
+            "'Oh, haha! I can see that! Now, lets get working!'"
+        ],
+        "speeds": [
+            1 
+        ],
+        "options": [],
+        "next_dialogue": ["text_5"]
+    },
+    "text_4": {
+        "lines": [
+            "What the fuck did you just say to me?",
+            "*They slam the door in your face*",
+            "GAME OVER: Shooters Shoot ending"
+        ],
+        "speeds": [
+            1,1,1 
+        ],
+        "options": [],
+        "next_dialogue": ["END"]
+    },
+    "text_5": {
+        "lines": [
+            "'I was thinking that we should probably start by writing the script. What do you say?'",
+            "'Great! Lets see... we just need some inspiration. Where someplace two people who care about each other are likely to go?'"
+        ],
+        "speeds": [
+            1, 1 
+        ],
+        "options": ["The Movies!", "The Beach!"],
+        "next_dialogue": ["text_6", "text_7"]
+    },
+    "text_6": {
+        "lines": [
+            "Great Idea!",
+            "What do you say we go there to do some research?"
+        ],
+        "speeds": [
+            1, 1 
+        ],
+        "options": [],
+        "next_dialogue": ["SCENE: Movies"]
+    },
+    "text_7": {
+        "lines": [
+            "Great Idea!",
+            "What do you say we go there to do some research?"
+        ],
+        "speeds": [
+            1, 1 
+        ],
+        "options": [],
+        "next_dialogue": ["SCENE: Beach"]
+    }
+}

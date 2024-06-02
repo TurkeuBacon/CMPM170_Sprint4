@@ -1,0 +1,50 @@
+{
+    "scene": "Class1",
+    "initial_dialogue": "text_1",
+    "text_1": {
+        "lines": [
+            "*it's the first day of spring quarter, and you just walked in to your new class*", 
+            "Oh boy, CMPM 170. I really hope this class isn't too hard. I heard Altice-sensei is super harsh. W-woah!!", 
+            "*You stumble to the ground, dropping all your books*", 
+            "Frankenstein: 'Are you ok?'",
+            "'I saw you take that fall pretty badly. Whats your name?'",
+            "Protag? Thats a funny name. I'm Frankenstein, but you can call me Frankie. Are you also in this class?",
+            "That's great! Maybe we can work on a, uhh, project together! What do you think?"
+        ],
+        "speeds": [
+            1, 1, 1, 1, 1, 1, 1
+        ],
+        "options": ["Sure! That would be great!", "Uh... no, weirdo...", "Did you know that the CIA Killed JFK?"],
+        "next_dialogue": ["text_2", "text_3", "text_4"]
+    },
+    "text_2": {
+        "lines": [
+            "'Great! See you around Protag-kun!'"
+        ],
+        "speeds": [
+            1
+        ],
+        "options": [],
+        "next_dialogue": "Scene: Class2"
+    },
+    "text_3": {
+        "lines": [
+            "Oh. Ok. See you around Protag-san..."
+        ],
+        "speeds": [
+            1
+        ],
+        "options": [],
+        "next_dialogue": "Scene: Class2"
+    },
+    "text_4": {
+        "lines": [
+            "Haha, you're so funny Protag-san! See you around!"
+        ],
+        "speeds": [
+            1
+        ],
+        "options": [],
+        "next_dialogue": "Scene: Class2"
+    }
+}
