@@ -1,72 +1,90 @@
 {
-    "scene": "McHenry2",
-    "initial_dialogue": "text_1",
-    "text_1": {
-        "lines": [
-            "Frankie wanted to work on this project again the next day? That's so annoying.",
-            "*You meet Frankie in the same study room as yesterday*",
-            "'Hey there Protag-kun! You're early this time, haha!'"
-        ],
-        "speeds": [
-            1, 1, 1
-        ],
-        "options": ["Yea, wouldn't wanna turn the project in late, now would we, haha!", "Of course, I'm eager to finish this!"],
-        "next_dialogue": ["text_2", "text_3"]
-    }, 
-    "text_2": {
-        "lines": [
-            "'Right! Now lets get working!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_4"]
-    }, 
-    "text_3": {
-        "lines": [
-            "'Oh, haha! I can see that! Now, lets get working!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_4"]
-    }, 
-    "text_4": {
-        "lines": [
-            "'I was thinking that we should probably start by writing the script. What do you say?'",
-            "Lets do it!",
-            "*You and Frankie work for a few hours*",
-            "Phew! We made some great progress!",
-            "'Yea! I think it's time to take a break.'",
-            "Agreed. How about we..."
-        ],
-        "speeds": [
-            1, 1, 1, 1, 1, 1
-        ],
-        "options": ["Go home!", "Go to the beach!"],
-        "next_dialogue": ["text_5", "text_6"]
-    }, 
-    "text_5": {
-        "lines": [
-            "Sure thing...",
-            "GAME OVER"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    },
-    "text_6": {
-        "lines": [
-            "Great Idea!"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["Scene: Beach"]
-    }  
+	"scene": "McHenry2",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"Frankie wanted to work on this project again the next day? That's so annoying.",
+			"*You meet Frankie in the same study room as yesterday*",
+			"'Hey there Protag-kun! You're early this time, haha!'"
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"expressions": [
+			"annoyed", "neutral", "happy"
+		],
+		"options": ["Yea, wouldn't wanna turn the project in late, now would we, haha!", "Of course, I'm eager to finish this!"],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"'Right! Now let's get working!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_3": {
+		"lines": [
+			"'Oh, haha! I can see that! Now, let's get working!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_4": {
+		"lines": [
+			"'I was thinking that we should probably start by writing the script. What do you say?'",
+			"Let's do it!",
+			"*You and Frankie work for a few hours*",
+			"Phew! We made some great progress!",
+			"'Yeah! I think it's time to take a break.'",
+			"Agreed. How about we..."
+		],
+		"speeds": [
+			1, 1, 1, 1, 1, 1
+		],
+		"expressions": [
+			"thinking", "neutral", "neutral", "happy", "happy", "neutral"
+		],
+		"options": ["Go home!", "Go to the beach!"],
+		"next_dialogue": ["text_5", "text_6"]
+	},
+	"text_5": {
+		"lines": [
+			"Sure thing...",
+			"GAME OVER"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "neutral"
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	},
+	"text_6": {
+		"lines": [
+			"Great idea!"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["Scene: Beach"]
+	}
 }

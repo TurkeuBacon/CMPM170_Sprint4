@@ -1,155 +1,170 @@
 {
-    "scene": "Boardwalk",
-    "initial_dialogue": "text_1",
-    "text_1": {
-        "lines": [
-            "*the lights sparkle in the night as you and Frankie meet on the boardwalk*"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": ["You look lovely!", "How's it going?", "Good to see you!"],
-        "next_dialogue": ["text_2", "text_3", "text_4"]
-    },
-    "text_2": {
-        "lines": [
-            "'Thank you, you look handsome as well!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_5"]
-    },
-    "text_3": {
-        "lines": [
-            "'Great, better now more than ever!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_5"]
-    },
-    "text_4": {
-        "lines": [
-            "'Good to see you too, Protag-san!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_5"]
-    },
-    "text_5": {
-        "lines": [
-            "'I'm glad we got to do this. I've actually been thinking about this for a while...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": ["Coming to the boardwalk?", "Going on a date?"],
-        "next_dialogue": ["text_6", "text_7"]
-    }, 
-    "text_6": {
-        "lines": [
-            "'Well, sorta...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_8"]
-    }, 
-    "text_7": {
-        "lines": [
-            "'Yea, you could say that...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_8"]
-    },
-    "text_8": {
-        "lines": [
-            "What should we do first Frankie?", 
-            "'I don't mind anything! It's up to you.'"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["Giant Dipper!", "Fireball!"],
-        "next_dialogue": ["text_9", "text_10"]
-    },
-    "text_9": {
-        "lines": [
-            "Sure! I've never gone, but it should be fun!",
-            "*You and Frankie go on the Giant Dipper*"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["text_11"]
-    },
-    "text_10": {
-        "lines": [
-            "Ok! Seems scary, but let’s do it!",
-            "*You and Frankie go on Fireball*"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["text_11"]
-    },
-    "text_11": {
-        "lines": [
-            "That was awesome! What did you think?",
-            "'I loved it! I'm glad we got to do this together!'",
-            "yea...",
-            "Frankie, I..."
-        ],
-        "speeds": [
-            1, 1, 1, 1
-        ],
-        "options": ["I love you", "I like you", "I don't think this should go any further. I'm sorry."],
-        "next_dialogue": ["text_12", "text_13", "text_14"]
-    },
-    "text_12": {
-        "lines": [
-            "'I uhh, I think this is going a little fast'",
-            "Oh, sorry...",
-            "'It's ok, let's just, slow down ok?'",
-            "Yea...",
-            "GAME OVER: Play it slow ending"
-        ],
-        "speeds": [
-            1, 1, 1, 1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    },
-    "text_13": {
-        "lines": [
-            "'I... like you too...'", 
-            "GAME OVER: Play it slow ending"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    }, 
-    "text_14": {
-        "lines": [
-            "GAME OVER: Let Her down easy ending"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    }
+	"scene": "Boardwalk",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"*the lights sparkle in the night as you and Frankie meet on the boardwalk*"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": ["You look lovely!", "How's it going?", "Good to see you!"],
+		"next_dialogue": ["text_2", "text_3", "text_4"]
+	},
+	"text_2": {
+		"lines": [
+			"'Thank you, you look handsome as well!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_5"]
+	},
+	"text_3": {
+		"lines": [
+			"'Great, better now more than ever!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_5"]
+	},
+	"text_4": {
+		"lines": [
+			"'Good to see you too, Protag-san!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_5"]
+	},
+	"text_5": {
+		"lines": [
+			"'I'm glad we got to do this. I've actually been thinking about this for a while...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": ["Coming to the boardwalk?", "Going on a date?"],
+		"next_dialogue": ["text_6", "text_7"]
+	},
+	"text_6": {
+		"lines": [
+			"'Well, sorta...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": [],
+		"next_dialogue": ["text_8"]
+	},
+	"text_7": {
+		"lines": [
+			"'Yea, you could say that...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": [],
+		"next_dialogue": ["text_8"]
+	},
+	"text_8": {
+		"lines": [
+			"What should we do first Frankie?",
+			"'I don't mind anything! It's up to you.'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"thinking", "neutral"
+		],
+		"options": ["Giant Dipper!", "Fireball!"],
+		"next_dialogue": ["text_9", "text_10"]
+	},
+	"text_9": {
+		"lines": [
+			"Sure! I've never gone, but it should be fun!",
+			"*You and Frankie go on the Giant Dipper*"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"happy", "neutral"
+		],
+		"options": [],
+		"next_dialogue": ["text_11"]
+	},
+	"text_10": {
+		"lines": [
+			"Ok! Seems scary, but let’s do it!",
+			"*You and Frankie go on Fireball*"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "neutral"
+		],
+		"options": [],
+		"next_dialogue": ["text_11"]
+	},
+	"text_11": {
+		"lines": [
+			"That was awesome! What did you think?",
+			"'I loved it! I'm glad we got to do this together!'",
+			"yea...",
+			"Frankie, I..."
+		],
+		"speeds": [
+			1, 1, 1, 1
+		],
+		"expressions": [
+			"neutral", "happy", "neutral", "neutral"
+		],
+		"options": ["I love you", "I like you", "I don't think this should go any further. I'm sorry."],
+		"next_dialogue": ["text_12", "text_13", "text_14"]
+	},
+	"text_12": {
+		"lines": [
+			"'I uhh, I think this is going a little fast'",
+			"Oh, sorry...",
+			"'It's ok, let's just, slow down ok?'",
+			"Yea...",
+			"GAME OVER: Play it slow ending"
+		],
+		"speeds": [
+			1, 1, 1, 1, 1
+		],
+		"expressions": [
+			"neutral", "sad", "neutral", "neutral", "neutral"
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	}
 }

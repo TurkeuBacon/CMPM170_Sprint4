@@ -1,154 +1,154 @@
 {
-    "scene": "Movies",
-    "initial_dialogue": "text_1",
-    "text_1": {
-        "lines": [
-            "*You and Frankie show up at the movies*",
-            "'Hey Protag-san! It's good to see you!'",
-            "'Alright, so we need to some more research here for our group project! What movie should we see?'"
-        ],
-        "speeds": [
-            1, 1, 1
-        ],
-        "options": ["The Notebook", "Chicken Run 2"],
-        "next_dialogue": ["text_2", "text_3"]
-    },
-    "text_2" : {
-        "lines": [
-            "'Great idea! Lets go see The Notebook!'",
-            "*You and Frankie go see The Notebook*"
-        ],
-        "speeds": [
-            1,1
-        ],
-        "options": [],
-        "next_dialogue": ["text_4"]
-    }, 
-    "text_3" : {
-        "lines": [
-            "'Great idea! Lets go see Chicken Run 2!'",
-            "*You and Frankie go see Chicken Run 2*"
-        ],
-        "speeds": [
-            1,1
-        ],
-        "options": [],
-        "next_dialogue": ["text_4"]
-    },
-    "text_4" : {
-        "lines": [
-            "'Wow! That movie was great. What did you think?'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": ["I loved it! I'm glad we got to do this together...", "Woulda been better with more violence.", "It was great! I only wish I wore looser pants!"],
-        "next_dialogue": ["text_5", "text_6", "text_7"]
-    },
-    "text_5" : {
-        "lines": [
-            "'Yea! I was really nice. I'm glad I got to hold your hand during the scary parts...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_9"]
-    },
-    "text_6" : {
-        "lines": [
-            "Oh, really? I didn't think so..."
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_9"]
-    },
-    "text_7" : {
-        "lines": [
-            "'What? Why would you say that?'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": ["uhh", "sorry..."],
-        "next_dialogue": ["text_8", "text_8"]
-    },
-    "text_8" : {
-        "lines": [
-            "'Anyway...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_9"]
-    },
-    "text_9" : {
-        "lines": [
-            "Well, this was nice!", 
-            "'Yea, it was!'"
-        ],
-        "speeds": [
-            1,1,1
-        ],
-        "options": ["It's almost like it was a date...", "Well, we certainly have enough information for our project!", "Listen, you're nice and all, but... I don't think this should go any further."],
-        "next_dialogue": ["text_10", "text_11", "text_12"]
-    },
-    "text_10" : {
-        "lines": [
-            "'Haha, yea! If it was a date, it sure would've been nice...'",
-            "In that case, maybe we could do a date for real?", 
-            "'That would be nice!'"
-        ],
-        "speeds": [
-            1, 1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["Scene: Boardwalk"]
-    },
-    "text_11" : {
-        "lines": [
-            "'Oh, yea. The project.'", 
-            "GAME OVER: Bag Fumbled Ending"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    },
-    "text_12" : {
-        "lines": [
-            "'Oh! Ok... I see how you feel.'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": ["We can still be friends!", "Maybe if you worked harder and were generally better I would like you more."],
-        "next_dialogue": ["text_13", "text_14"]
-    },
-    "text_13" : {
-        "lines": [
-            "'Sure. That would be nice...'",
-            "GAME OVER: Let Her Down Easy Ending"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    }, 
-    "text_14" : {
-        "lines": [
-            "'What? But Protag, I would go to the ends of the earth for you!'",
-            "Oh yea?"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["Scene: Antarctica"]
-    }
+	"scene": "Movies",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"*You and Frankie show up at the movies*",
+			"'Hey Protag-san! It's good to see you!'",
+			"'Alright, so we need to do some more research here for our group project! What movie should we see?'"
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"options": ["The Notebook", "Chicken Run 2"],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2" : {
+		"lines": [
+			"'Great idea! Let's go see The Notebook!'",
+			"*You and Frankie go see The Notebook*"
+		],
+		"speeds": [
+			1,1
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	}, 
+	"text_3" : {
+		"lines": [
+			"'Great idea! Let's go see Chicken Run 2!'",
+			"*You and Frankie go see Chicken Run 2*"
+		],
+		"speeds": [
+			1,1
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_4" : {
+		"lines": [
+			"'Wow! That movie was great. What did you think?'"
+		],
+		"speeds": [
+			1
+		],
+		"options": ["I loved it! I'm glad we got to do this together...", "Woulda been better with more violence.", "It was great! I only wish I wore looser pants!"],
+		"next_dialogue": ["text_5", "text_6", "text_7"]
+	},
+	"text_5" : {
+		"lines": [
+			"'Yea! It was really nice. I'm glad I got to hold your hand during the scary parts...'"
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["text_9"]
+	},
+	"text_6" : {
+		"lines": [
+			"Oh, really? I didn't think so..."
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["text_9"]
+	},
+	"text_7" : {
+		"lines": [
+			"'What? Why would you say that?'"
+		],
+		"speeds": [
+			1
+		],
+		"options": ["uhh", "sorry..."],
+		"next_dialogue": ["text_8", "text_8"]
+	},
+	"text_8" : {
+		"lines": [
+			"'Anyway...'"
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["text_9"]
+	},
+	"text_9" : {
+		"lines": [
+			"Well, this was nice!", 
+			"'Yea, it was!'"
+		],
+		"speeds": [
+			1,1,1
+		],
+		"options": ["It's almost like it was a date...", "Well, we certainly have enough information for our project!", "Listen, you're nice and all, but... I don't think this should go any further."],
+		"next_dialogue": ["text_10", "text_11", "text_12"]
+	},
+	"text_10" : {
+		"lines": [
+			"'Haha, yea! If it was a date, it sure would've been nice...'",
+			"In that case, maybe we could do a date for real?", 
+			"'That would be nice!'"
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"options": [],
+		"next_dialogue": ["Scene: Boardwalk"]
+	},
+	"text_11" : {
+		"lines": [
+			"'Oh, yea. The project.'", 
+			"GAME OVER: Bag Fumbled Ending"
+		],
+		"speeds": [
+			1, 1
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	},
+	"text_12" : {
+		"lines": [
+			"'Oh! Ok... I see how you feel.'"
+		],
+		"speeds": [
+			1
+		],
+		"options": ["We can still be friends!", "Maybe if you worked harder and were generally better I would like you more."],
+		"next_dialogue": ["text_13", "text_14"]
+	},
+	"text_13" : {
+		"lines": [
+			"'Sure. That would be nice...'",
+			"GAME OVER: Let Her Down Easy Ending"
+		],
+		"speeds": [
+			1, 1
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	}, 
+	"text_14" : {
+		"lines": [
+			"'What? But Protag, I would go to the ends of the earth for you!'",
+			"Oh yea?"
+		],
+		"speeds": [
+			1, 1
+		],
+		"options": [],
+		"next_dialogue": ["Scene: Antarctica"]
+	}
 }

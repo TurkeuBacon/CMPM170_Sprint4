@@ -1,46 +1,58 @@
 {
-    "scene": "Class2",
-    "initial_dialogue": "text_1",
-    "text_1": {
-        "lines": [
-            "Oh boy, 170 again. Man, this sucks. Oh wait, is that Frankie? I forgot they're in this class…",
-            "Frankie: 'Protag-san! Protag-san! It's good to see you again! Did you miss me?'"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["Uhhh... yes... I mean no! I mean, uh...", "Nope."],
-        "next_dialogue": ["text_2", "text_3"]
-    },
-    "text_2": {
-        "lines": [
-            "'You're so funny Protag-san!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_4"]
-    },
-    "text_3": {
-        "lines": [
-            "oh."
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [""],
-        "next_dialogue": ["text_4"]
-    },
-    "text_4": {
-        "lines": [
-            "'Well, I talked to Altice-sensei, and we're gonna be working on the same project together! How exciting!'",
-            "I was thinking we would go to McHenry to study. What do you think?"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["Sure! That sounds fun!", "Uh... sure. I guess we can work together..."],
-        "next_dialogue": ["Scene: McHenry"]
-    }
+	"scene": "Class2",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"Oh boy, 170 again. Man, this sucks. Oh wait, is that Frankie? I forgot they're in this class…",
+			"Frankie: 'Protag-san! Protag-san! It's good to see you again! Did you miss me?'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "happy"
+		],
+		"options": ["Uhhh... yes... I mean no! I mean, uh...", "Nope."],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"'You're so funny Protag-san!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"laughing"
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_3": {
+		"lines": [
+			"oh."
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"upset"
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_4": {
+		"lines": [
+			"'Well, I talked to Altice-sensei, and we're gonna be working on the same project together! How exciting!'",
+			"I was thinking we would go to McHenry to study. What do you think?"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"happy", "thinking"
+		],
+		"options": ["Sure! That sounds fun!", "Uh... sure. I guess we can work together..."],
+		"next_dialogue": ["Scene: McHenry"]
+	}
 }
