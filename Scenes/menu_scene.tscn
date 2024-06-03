@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba6a1fi6xmcud"]
+
+[ext_resource type="Script" path="res://Scripts/start.gd" id="1_8vced"]
+[ext_resource type="Theme" uid="uid://qbk7rmglhuyi" path="res://main_theme.tres" id="3_8ipth"]
+[ext_resource type="FontFile" uid="uid://bkdrcb56tanvy" path="res://Textures/Patchwork Stitchlings Color.ttf" id="4_3num5"]
+
+[node name="MenuScene" type="Node2D"]
+script = ExtResource("1_8vced")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+theme = ExtResource("3_8ipth")
+
+[node name="Container" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_right = 511.0
+offset_bottom = 256.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/Container"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 40.0
+offset_right = 784.0
+offset_bottom = 689.0
+theme = ExtResource("3_8ipth")
+text = "My Electrifying Romance
+with the Monster from the Lab of Love!"
+
+[node name="Button" type="Button" parent="Panel/Container"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.583
+anchor_top = 0.453
+anchor_right = 0.583
+anchor_bottom = 0.453
+offset_left = 517.087
+offset_top = 148.032
+offset_right = 756.087
+offset_bottom = 265.032
+theme = ExtResource("3_8ipth")
+theme_override_fonts/font = ExtResource("4_3num5")
+text = "Play"
+
+[connection signal="pressed" from="Panel/Container/Button" to="." method="_on_button_pressed"]

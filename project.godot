@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="CMPM170_Sprint4"
-run/main_scene="res://Scenes/main_game_scene.tscn"
+run/main_scene="res://Scenes/menu_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
