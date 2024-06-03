@@ -1,0 +1,43 @@
+{
+	"scene": "Scene1",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"This is the first line coming from json", "Hip Hip Horray", "AHHHHHHHHHH"
+		],
+		"speeds": [
+			10, 10, 10
+		],
+		"expressions": [
+			"happy", "sad", "happy"
+		],
+		"options": ["go_text_2", "go_text_3"],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"", "", ""
+		],
+		"speeds": [
+			10, 10, 10
+		],
+		"expressions": [
+			"mad", "happy", "mad"
+		],
+		"options": [],
+		"next_dialogue": ["end"]
+	},
+	"text_3": {
+		"lines": [
+			"", "", ""
+		],
+		"speeds": [
+			10, 10, 10
+		],
+		"expressions": [
+			"mad", "sad", "mad"
+		],
+		"options": [],
+		"next_dialogue": ["end"]
+	},
+}
