@@ -53,7 +53,7 @@ func load_dialogue_json(json: JSON) -> Dialogue:
 	return dialogues[initial_dialogue_name];
 
 func add_dialogue(key: String, json_data):
-	if(key.substr(0, 3).to_lower() == "end"):
+	if(key.substr(0, 7).to_lower() == "scene: " || key.to_lower() == "end"):
 		return;
 	var entry = json_data[key];
 	var next_dialogues = entry.next_dialogue;
@@ -86,8 +86,7 @@ func show_options():
 			showing_options = false;
 			textDisplay.visible = true;
 			optionsScroll.visible = false;
-			for button in current_options:
-				button.queue_free();
+			clear_options();
 			goto_next(optionNext);
 		);
 		optionsArea.add_child(optionButton);
@@ -103,4 +102,6 @@ func goto_next(next: String):
 
 func clear_options():
 	if(current_options != null):
+		for button in current_options:
+			button.queue_free();
 		current_options.clear();

@@ -23,21 +23,20 @@ script = ExtResource("1_rcloj")
 texture = ExtResource("2_nwmx0")
 
 [node name="TextDisplay" type="Label" parent="Textbox/TextBackground"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -256.5
-offset_top = -139.5
-offset_right = -255.5
-offset_bottom = -116.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = -256.0
+offset_bottom = -128.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(256, 0)
 size_flags_horizontal = 4
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="OptionsScrollArea" type="ScrollContainer" parent="Textbox/TextBackground"]
 anchors_preset = 15
@@ -66,8 +65,8 @@ texture = ExtResource("4_dtdkw")
 
 [node name="DialogueManager" type="Node" parent="."]
 script = ExtResource("3_xkt7o")
-json_folder_path = "res://JSON/"
-initial_scene = "dialoge_json_test"
+json_folder_path = "res://jsons/"
+initial_scene = "Class1"
 
 [node name="Container" type="Container" parent="."]
 offset_right = 40.0
