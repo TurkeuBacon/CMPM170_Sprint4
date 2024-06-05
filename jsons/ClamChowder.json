@@ -1,69 +1,70 @@
 {
-    "scene": "ClamChowder",
-    "initial_dialogue": "text_1",
-    "text_1": {
-        "lines": [
-            "*You and Frankie both enter the clam chowder eating contest*",
-            "'I've never really done anything like this before. Are you sure this is a good idea?'"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["Yea!", "You're gonna do great. You were practically made to eat clam chowder!"],
-        "next_dialogue": ["text_2", "text_2"]
-    },
-    "text_2": {
-        "lines": [
-            "'If you say so...'",
-            "*The contest begins*", 
-            "Holy crap! Frankie is devouring that chowder! They're nuts!",
-            "*Frankie continues to gulp down clam chowder like its their last day on Earth*"
-        ],
-        "speeds": [
-            1, 1, 1, 1
-        ],
-        "options": ["Try and speed up to win", "Sit back in awe"],
-        "next_dialogue": ["text_3", "text_4"]
-    }, 
-    "text_3": {
-        "lines": [
-            "*you begin to slide back bread bowls like you're Joey Chestnut, slowly gaining on Frankie*",
-            "She's still winning! This is nuts!"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["Let them win", "Sabotage them"],
-        "next_dialogue": ["text_4", "text_5"]
-    }, 
-    "text_4": {
-        "lines": [
-            "*The contest ends, and Frankie is crowned the champion*", 
-            "'Wow, protag-san, you were right! I am great at this!'", 
-            "You sure know how to eat those clams!", 
-            "'Yea, I suppose so! Protag-san, thanks for helping me find my true calling!'",
-            "True calling? Huh?",
-            "*Frankie goes on to become the clam chowder eating champion. They forget about you entirely, but credit you for helping them find their passion years later in their memoir.*",
-            "GAME OVER: Clam Chowder Ending"
-        ],
-        "speeds": [
-            1, 1, 1, 1, 1, 1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    },
-    "text_5": {
-        "lines": [
-            "*As Frankie polishes off another round, you drop a low elbow into their gut, causing them to vomit*", 
-            "'Bllllaaaargh!'",
-            "Haha! I win Frankie!",
-            "'Protag,  you're a sick bastard. I'm never speaking to you again.'",
-            "GAME OVER: Take A Hard Look in the Mirror Ending"
-        ],
-        "speeds": [
-            1, 1, 1, 1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    }
+	"scene": "ClamChowder",
+	"background" : "icecream",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"*You and Frankie both enter the clam chowder eating contest*",
+			"'I've never really done anything like this before. Are you sure this is a good idea?'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"options": ["Yea!", "You're gonna do great. You were practically made to eat clam chowder!"],
+		"next_dialogue": ["text_2", "text_2"]
+	},
+	"text_2": {
+		"lines": [
+			"'If you say so...'",
+			"*The contest begins*", 
+			"Holy crap! Frankie is devouring that chowder! They're nuts!",
+			"*Frankie continues to gulp down clam chowder like its their last day on Earth*"
+		],
+		"speeds": [
+			1, 1, 1, 1
+		],
+		"options": ["Try and speed up to win", "Sit back in awe"],
+		"next_dialogue": ["text_3", "text_4"]
+	}, 
+	"text_3": {
+		"lines": [
+			"*you begin to slide back bread bowls like you're Joey Chestnut, slowly gaining on Frankie*",
+			"She's still winning! This is nuts!"
+		],
+		"speeds": [
+			1, 1
+		],
+		"options": ["Let them win", "Sabotage them"],
+		"next_dialogue": ["text_4", "text_5"]
+	}, 
+	"text_4": {
+		"lines": [
+			"*The contest ends, and Frankie is crowned the champion*", 
+			"'Wow, protag-san, you were right! I am great at this!'", 
+			"You sure know how to eat those clams!", 
+			"'Yea, I suppose so! Protag-san, thanks for helping me find my true calling!'",
+			"True calling? Huh?",
+			"*Frankie goes on to become the clam chowder eating champion. They forget about you entirely, but credit you for helping them find their passion years later in their memoir.*",
+			"GAME OVER: Clam Chowder Ending"
+		],
+		"speeds": [
+			1, 1, 1, 1, 1, 1, 1
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	},
+	"text_5": {
+		"lines": [
+			"*As Frankie polishes off another round, you drop a low elbow into their gut, causing them to vomit*", 
+			"'Bllllaaaargh!'",
+			"Haha! I win Frankie!",
+			"'Protag,  you're a sick bastard. I'm never speaking to you again.'",
+			"GAME OVER: Take A Hard Look in the Mirror Ending"
+		],
+		"speeds": [
+			1, 1, 1, 1, 1
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	}
 }

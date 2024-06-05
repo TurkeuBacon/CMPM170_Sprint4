@@ -1,17 +1,25 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=12 format=3 uid="uid://cv8kaqnaoswld"]
+=======
+[gd_scene load_steps=8 format=3 uid="uid://cv8kaqnaoswld"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://wd6d8np8rm21" path="res://Textures/background/bookstore.jpg" id="1_62bxw"]
 [ext_resource type="Script" path="res://Scripts/textbox.gd" id="1_rcloj"]
+[ext_resource type="Script" path="res://Scenes/Background.gd" id="2_ebmm5"]
 [ext_resource type="Texture2D" uid="uid://dsxg8frhuljkb" path="res://Textures/TextBackingTex.png" id="2_nwmx0"]
 [ext_resource type="Script" path="res://Scripts/dilogue_manager.gd" id="3_xkt7o"]
 [ext_resource type="Script" path="res://Scripts/frankie.gd" id="4_2ovx8"]
 [ext_resource type="Texture2D" uid="uid://dk30btvunhapg" path="res://Textures/happy.png" id="4_dtdkw"]
+<<<<<<< Updated upstream
 [ext_resource type="JSON" path="res://JSON/dialoge_json_test.json" id="6_yyi3k"]
 [ext_resource type="Script" path="res://Scripts/pause.gd" id="8_fmuqh"]
 [ext_resource type="Texture2D" uid="uid://f7bgwi8kkpml" path="res://Textures/pause.png" id="8_pl7d3"]
 [ext_resource type="Theme" uid="uid://qbk7rmglhuyi" path="res://main_theme.tres" id="8_u1v43"]
 [ext_resource type="Texture2D" uid="uid://bhspi84arotva" path="res://Textures/pause_pressed.png" id="9_3lm71"]
 [ext_resource type="Texture2D" uid="uid://bwrvgk11xwsni" path="res://Textures/pause_hover.png" id="9_g7f6c"]
+=======
+>>>>>>> Stashed changes
 
 [node name="MainGameScene" type="Node2D"]
 
@@ -19,6 +27,7 @@
 position = Vector2(637, 364.5)
 scale = Vector2(0.315476, 0.237765)
 texture = ExtResource("1_62bxw")
+script = ExtResource("2_ebmm5")
 
 [node name="Textbox" type="Node2D" parent="."]
 z_index = 1

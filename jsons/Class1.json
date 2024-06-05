@@ -1,5 +1,6 @@
 {
 	"scene": "Class1",
+	"background" : "class",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [
@@ -12,7 +13,7 @@
 			"That's great! Maybe we can work on a, uhh, project together! What do you think?"
 		],
 		"speeds": [
-			1, 1, 1, 1, 1, 1, 1
+			10, 10, 10, 10, 10, 10, 10
 		],
 		"expressions": [
 			"neutral", "neutral", "surprised", "concerned", "curious", "happy", "hopeful"
@@ -25,7 +26,7 @@
 			"'Great! See you around Protag-kun!'"
 		],
 		"speeds": [
-			1
+			10
 		],
 		"expressions": [
 			"happy"
@@ -38,7 +39,7 @@
 			"Oh. Ok. See you around Protag-san..."
 		],
 		"speeds": [
-			1
+			10
 		],
 		"expressions": [
 			"upset"
@@ -51,7 +52,7 @@
 			"Haha, you're so funny Protag-san! See you around!"
 		],
 		"speeds": [
-			1
+			10
 		],
 		"expressions": [
 			"laughing"

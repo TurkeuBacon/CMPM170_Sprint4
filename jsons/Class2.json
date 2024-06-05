@@ -1,5 +1,6 @@
 {
 	"scene": "Class2",
+	"background" : "class",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [
