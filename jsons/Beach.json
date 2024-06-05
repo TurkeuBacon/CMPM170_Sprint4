@@ -1,101 +1,128 @@
 {
-    "scene": "Beach",
-    "initial_dialogue": "text_1",
-    "text_1": {
-        "lines": [
-            "*You and Frankie show up at the beach*", 
-            "'Hey Protag-san! It's good to see you!'",
-            "'Alright, so we need to do some more research here for our group project! What should we do?'"
-        ],
-        "speeds": [
-            1, 1, 1
-        ],
-        "options": ["Walk on the beach!", "Clam Chowder Eating Contest"],
-        "next_dialogue": ["text_2", "text_3"]
-    },
-    "text_2": {
-        "lines": [
-            "'Great idea! Let's go on a walk!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_4"]
-    },
-    "text_3": {
-        "lines": [
-            "'Oh, if you say so...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["Scene: ClamChowder"]
-    },
-    "text_4": {
-        "lines": [
-            "*You and Frankie walk on the beach*", 
-            "'That was so cool! What did you think?'"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["I loved it! I'm glad we got to do this together...", "Did you see that sea lion rip apart that seagull? Utterly gnarly!"],
-        "next_dialogue": ["text_5", "text_6"]
-    },
-    "text_5": {
-        "lines": [
-            "'Yea! I was really nice. I'm glad I got to see those sea otters!'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_7"]
-    },
-    "text_6": {
-        "lines": [
-            "'Oh, really? I didn't think so...'"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["text_7"]
-    },
-    "text_7": {
-        "lines": [
-            "Well, this was nice!",
-            "'Yea, it was!'"
-        ],
-        "speeds": [
-            1, 1
-        ],
-        "options": ["It's almost like it was a date...", "Well, we certainly have enough information for our project!"],
-        "next_dialogue": ["text_8", "text_9"]
-    },
-    "text_8": {
-        "lines": [
-            "'Haha, yea! If it was a date, it sure would've been nice...'",
-            " In that case, maybe we could do a date for real?", 
-            "'That would be nice!'"
-        ],
-        "speeds": [
-            1, 1, 1
-        ],
-        "options": [],
-        "next_dialogue": ["Scene: Boardwalk"]
-    },
-    "text_9": {
-        "lines": [
-            "Oh, yea. The project.",
-            "GAME OVER: Bag Fumbled Ending"
-        ],
-        "speeds": [
-            1
-        ],
-        "options": [],
-        "next_dialogue": ["END"]
-    }
+	"scene": "Beach",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"*You and Frankie show up at the beach*",
+			"'Hey Protag-san! It's good to see you!'",
+			"'Alright, so we need to do some more research here for our group project! What should we do?'"
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"expressions": [
+			"neutral", "happy", "neutral"
+		],
+		"options": ["Walk on the beach!", "Clam Chowder Eating Contest"],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"'Great idea! Let's go on a walk!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_3": {
+		"lines": [
+			"'Oh, if you say so...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": [],
+		"next_dialogue": ["Scene: ClamChowder"]
+	},
+	"text_4": {
+		"lines": [
+			"*You and Frankie walk on the beach*",
+			"'That was so cool! What did you think?'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "neutral"
+		],
+		"options": ["I loved it! I'm glad we got to do this together...", "Did you see that sea lion rip apart that seagull? Utterly gnarly!"],
+		"next_dialogue": ["text_5", "text_6"]
+	},
+	"text_5": {
+		"lines": [
+			"'Yea! I was really nice. I'm glad I got to see those sea otters!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_7"]
+	},
+	"text_6": {
+		"lines": [
+			"'Oh, really? I didn't think so...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"sad"
+		],
+		"options": [],
+		"next_dialogue": ["text_7"]
+	},
+	"text_7": {
+		"lines": [
+			"Well, this was nice!",
+			"'Yea, it was!'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "neutral"
+		],
+		"options": ["It's almost like it was a date...", "Well, we certainly have enough information for our project!"],
+		"next_dialogue": ["text_8", "text_9"]
+	},
+	"text_8": {
+		"lines": [
+			"'Haha, yea! If it was a date, it sure would've been nice...'",
+			" In that case, maybe we could do a date for real?",
+			"'That would be nice!'"
+		],
+		"speeds": [
+			1, 1, 1
+		],
+		"expressions": [
+			"laughing", "happy", "happy"
+		],
+		"options": [],
+		"next_dialogue": ["Scene: Boardwalk"]
+	},
+	"text_9": {
+		"lines": [
+			"Oh, yea. The project.",
+			"GAME OVER: Bag Fumbled Ending"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "sad"
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	}
 }

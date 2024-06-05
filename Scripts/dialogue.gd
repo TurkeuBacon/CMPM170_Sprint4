@@ -28,6 +28,7 @@ func start_dialogue(textbox: TextBox, frankie: Frankie):
 	current_frankie.set_expression(expressions[dialogue_index]);
 	textbox.type_text(text_segments[dialogue_index], text_speeds[dialogue_index], line_finish_callback);
 	typing_text = true;
+	in_progress = true;
 
 func advance_dialogue():
 	if(typing_text):

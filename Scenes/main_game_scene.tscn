@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cv8kaqnaoswld"]
+[gd_scene load_steps=7 format=3 uid="uid://cv8kaqnaoswld"]
 
 [ext_resource type="Texture2D" uid="uid://wd6d8np8rm21" path="res://Textures/background/bookstore.jpg" id="1_62bxw"]
 [ext_resource type="Script" path="res://Scripts/textbox.gd" id="1_rcloj"]
 [ext_resource type="Texture2D" uid="uid://dsxg8frhuljkb" path="res://Textures/TextBackingTex.png" id="2_nwmx0"]
 [ext_resource type="Script" path="res://Scripts/dilogue_manager.gd" id="3_xkt7o"]
 [ext_resource type="Script" path="res://Scripts/frankie.gd" id="4_2ovx8"]
-[ext_resource type="Texture2D" uid="uid://dk30btvunhapg" path="res://Textures/happy.png" id="4_dtdkw"]
-[ext_resource type="JSON" path="res://JSON/dialoge_json_test.json" id="6_yyi3k"]
+[ext_resource type="Texture2D" path="res://Textures/happy.png" id="4_dtdkw"]
 
 [node name="MainGameScene" type="Node2D"]
 
@@ -24,21 +23,37 @@ script = ExtResource("1_rcloj")
 texture = ExtResource("2_nwmx0")
 
 [node name="TextDisplay" type="Label" parent="Textbox/TextBackground"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -256.5
-offset_top = -139.5
-offset_right = -255.5
-offset_bottom = -116.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = -256.0
+offset_bottom = -128.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(256, 0)
 size_flags_horizontal = 4
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OptionsScrollArea" type="ScrollContainer" parent="Textbox/TextBackground"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = -256.0
+offset_bottom = -128.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 0
+
+[node name="OptionsLayout" type="VBoxContainer" parent="Textbox/TextBackground/OptionsScrollArea"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Frankie" type="Node2D" parent="."]
 position = Vector2(640, 360)
@@ -50,4 +65,9 @@ texture = ExtResource("4_dtdkw")
 
 [node name="DialogueManager" type="Node" parent="."]
 script = ExtResource("3_xkt7o")
-dialogue_json = ExtResource("6_yyi3k")
+json_folder_path = "res://jsons/"
+initial_scene = "Class1"
+
+[node name="Container" type="Container" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
