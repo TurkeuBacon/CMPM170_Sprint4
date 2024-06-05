@@ -40,6 +40,23 @@ size_flags_horizontal = 4
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="OptionsScrollArea" type="ScrollContainer" parent="Textbox/TextBackground"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = -256.0
+offset_bottom = -128.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 0
+
+[node name="OptionsLayout" type="VBoxContainer" parent="Textbox/TextBackground/OptionsScrollArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Frankie" type="Node2D" parent="."]
 position = Vector2(640, 360)
 script = ExtResource("4_2ovx8")
@@ -51,3 +68,7 @@ texture = ExtResource("4_dtdkw")
 [node name="DialogueManager" type="Node" parent="."]
 script = ExtResource("3_xkt7o")
 dialogue_json = ExtResource("6_yyi3k")
+
+[node name="Container" type="Container" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
