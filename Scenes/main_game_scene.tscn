@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cv8kaqnaoswld"]
+[gd_scene load_steps=7 format=3 uid="uid://cv8kaqnaoswld"]
 
 [ext_resource type="Texture2D" uid="uid://wd6d8np8rm21" path="res://Textures/background/bookstore.jpg" id="1_62bxw"]
 [ext_resource type="Script" path="res://Scripts/textbox.gd" id="1_rcloj"]
 [ext_resource type="Texture2D" uid="uid://dsxg8frhuljkb" path="res://Textures/TextBackingTex.png" id="2_nwmx0"]
 [ext_resource type="Script" path="res://Scripts/dilogue_manager.gd" id="3_xkt7o"]
 [ext_resource type="Script" path="res://Scripts/frankie.gd" id="4_2ovx8"]
-[ext_resource type="Texture2D" uid="uid://dk30btvunhapg" path="res://Textures/happy.png" id="4_dtdkw"]
-[ext_resource type="JSON" path="res://JSON/dialoge_json_test.json" id="6_yyi3k"]
+[ext_resource type="Texture2D" path="res://Textures/happy.png" id="4_dtdkw"]
 
 [node name="MainGameScene" type="Node2D"]
 
@@ -67,7 +66,8 @@ texture = ExtResource("4_dtdkw")
 
 [node name="DialogueManager" type="Node" parent="."]
 script = ExtResource("3_xkt7o")
-dialogue_json = ExtResource("6_yyi3k")
+json_folder_path = "res://JSON/"
+initial_scene = "dialoge_json_test"
 
 [node name="Container" type="Container" parent="."]
 offset_right = 40.0

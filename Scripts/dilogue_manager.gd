@@ -2,7 +2,9 @@ extends Node
 
 class_name DialogueManager
 
-@export var dialogue_json: JSON;
+@export var json_folder_path: String;
+@export var initial_scene: String;
+var dialogue_jsons: Dictionary;
 
 var dialogues: Dictionary;
 var current_dialogue: Dialogue;
@@ -20,7 +22,19 @@ func _ready():
 	textDisplay = $"../Textbox/TextBackground/TextDisplay";
 	optionsScroll = $"../Textbox/TextBackground/OptionsScrollArea";
 	optionsArea = $"../Textbox/TextBackground/OptionsScrollArea/OptionsLayout";
-	current_dialogue = load_dialogue_json(dialogue_json);
+	
+	dialogue_jsons = {};
+	for json_name in DirAccess.get_files_at(json_folder_path):
+		var json_path = json_folder_path + json_name;
+		var file = FileAccess.open(json_path, FileAccess.READ);
+		var json_string = file.get_as_text();
+		var json = JSON.new()
+		json.parse(json_string);
+		var json_key = json_name.substr(0, json_name.length()-5);
+		print(json_key);
+		dialogue_jsons[json_key] = json;
+	
+	current_dialogue = load_dialogue_json(dialogue_jsons.get(initial_scene));
 	showing_options = false;
 	if(current_dialogue != null):
 		current_dialogue.start_dialogue(textbox, frankie);
@@ -56,8 +70,8 @@ func add_dialogue(key: String, json_data):
 
 func show_options():
 	if(current_dialogue.options.size() == 0):
-		current_dialogue = dialogues.get(current_dialogue.next_dialogue[0]);
-		current_dialogue.start_dialogue(textbox, frankie);
+		var next_name = current_dialogue.next_dialogue[0];
+		goto_next(next_name);
 		return;
 	showing_options = true;
 	textDisplay.visible = false;
@@ -69,15 +83,23 @@ func show_options():
 		current_options.push_back(optionButton);
 		optionButton.text = optionText;
 		optionButton.pressed.connect(func selectOption():
-			current_dialogue = dialogues.get(optionNext);
 			showing_options = false;
 			textDisplay.visible = true;
 			optionsScroll.visible = false;
-			current_dialogue.start_dialogue(textbox, frankie);
 			for button in current_options:
 				button.queue_free();
+			goto_next(optionNext);
 		);
 		optionsArea.add_child(optionButton);
+
+func goto_next(next: String):
+	if(next.to_lower() == "end"):
+		return;
+	if(next.substr(0, 7).to_lower() == "scene: "):
+		current_dialogue = load_dialogue_json(dialogue_jsons[next.substr(7)]);
+	else:
+		current_dialogue = dialogues.get(next);
+	current_dialogue.start_dialogue(textbox, frankie);
 
 func clear_options():
 	if(current_options != null):
