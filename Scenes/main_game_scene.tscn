@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cv8kaqnaoswld"]
+[gd_scene load_steps=12 format=3 uid="uid://cv8kaqnaoswld"]
 
 [ext_resource type="Script" path="res://Scripts/textbox.gd" id="1_rcloj"]
 [ext_resource type="Texture2D" uid="uid://dsxg8frhuljkb" path="res://Textures/TextBackingTex.png" id="2_nwmx0"]
@@ -6,6 +6,11 @@
 [ext_resource type="Script" path="res://Scripts/frankie.gd" id="4_2ovx8"]
 [ext_resource type="Texture2D" uid="uid://dk30btvunhapg" path="res://Textures/happy.png" id="4_dtdkw"]
 [ext_resource type="JSON" path="res://JSON/dialoge_json_test.json" id="6_yyi3k"]
+[ext_resource type="Script" path="res://Scripts/pause.gd" id="8_fmuqh"]
+[ext_resource type="Texture2D" uid="uid://f7bgwi8kkpml" path="res://Textures/pause.png" id="8_pl7d3"]
+[ext_resource type="Theme" uid="uid://qbk7rmglhuyi" path="res://main_theme.tres" id="8_u1v43"]
+[ext_resource type="Texture2D" uid="uid://bhspi84arotva" path="res://Textures/pause_pressed.png" id="9_3lm71"]
+[ext_resource type="Texture2D" uid="uid://bwrvgk11xwsni" path="res://Textures/pause_hover.png" id="9_g7f6c"]
 
 [node name="MainGameScene" type="Node2D"]
 
@@ -42,3 +47,61 @@ texture = ExtResource("4_dtdkw")
 [node name="DialogueManager" type="Node" parent="."]
 script = ExtResource("3_xkt7o")
 dialogue_json = ExtResource("6_yyi3k")
+
+[node name="MenuButton" type="MenuButton" parent="."]
+offset_right = 81.0
+offset_bottom = 86.0
+theme = ExtResource("8_u1v43")
+script = ExtResource("8_fmuqh")
+
+[node name="PauseOverlay" type="Panel" parent="MenuButton"]
+visible = false
+modulate = Color(1, 1, 1, 0.396078)
+offset_right = 1274.0
+offset_bottom = 718.0
+theme = ExtResource("8_u1v43")
+
+[node name="PauseMenu" type="Panel" parent="MenuButton"]
+visible = false
+layout_mode = 0
+offset_left = 351.0
+offset_top = 43.0
+offset_right = 926.0
+offset_bottom = 416.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MenuButton/PauseMenu"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 32.0
+offset_right = 511.0
+offset_bottom = 127.0
+text = "paused"
+
+[node name="Button" type="Button" parent="MenuButton/PauseMenu"]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 166.0
+offset_right = 408.0
+offset_bottom = 283.0
+text = "menu"
+
+[node name="TextureButton" type="TextureButton" parent="MenuButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.5
+offset_top = -33.5
+offset_right = 32.5
+offset_bottom = 31.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("8_pl7d3")
+texture_pressed = ExtResource("9_3lm71")
+texture_hover = ExtResource("9_g7f6c")
+
+[connection signal="pressed" from="MenuButton/PauseMenu/Button" to="MenuButton" method="_on_button_pressed"]
+[connection signal="pressed" from="MenuButton/TextureButton" to="Textbox" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="MenuButton/TextureButton" to="MenuButton" method="_on_texture_button_pressed"]

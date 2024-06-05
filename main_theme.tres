@@ -1,19 +1,39 @@
-[gd_resource type="Theme" load_steps=4 format=3 uid="uid://qbk7rmglhuyi"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://qbk7rmglhuyi"]
 
 [ext_resource type="FontFile" uid="uid://bkdrcb56tanvy" path="res://Textures/Patchwork Stitchlings Color.ttf" id="1_34l47"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3mfr"]
 bg_color = Color(0.729412, 0.933333, 0.823529, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64bx2"]
+bg_color = Color(0.661417, 0.12971, 0.999989, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pu8k4"]
-bg_color = Color(0.66751, 0.494581, 0.930379, 1)
+bg_color = Color(0.768627, 0.529412, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktqo0"]
+bg_color = Color(0.638019, 0.580466, 0.625116, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ln4ss"]
+bg_color = Color(0.917647, 0.615686, 0.752941, 0)
 
 [resource]
 default_font = ExtResource("1_34l47")
 Button/colors/font_color = Color(0.843137, 0.203922, 0.462745, 1)
 Button/font_sizes/font_size = 24
 Button/styles/normal = SubResource("StyleBoxFlat_t3mfr")
+Panel/styles/hover = SubResource("StyleBoxFlat_64bx2")
 Panel/styles/panel = SubResource("StyleBoxFlat_pu8k4")
 RichTextLabel/colors/default_color = Color(0.728239, 0.932949, 0.824211, 1)
 RichTextLabel/font_sizes/normal_font_size = 42
+RichTextLabel/styles/focus = SubResource("StyleBoxFlat_ktqo0")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_ln4ss")
 TextEdit/colors/font_color = Color(0.933333, 0.670588, 0.847059, 1)

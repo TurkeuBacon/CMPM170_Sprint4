@@ -27,3 +27,5 @@ func type_text(text, speed, completion_callback: Callable) -> void:
 func force_text(text) -> void:
 	cancel_typing_flag = true;
 	text_display.text = text;
+
+
