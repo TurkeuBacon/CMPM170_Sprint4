@@ -12,7 +12,6 @@
 [ext_resource type="Theme" uid="uid://qbk7rmglhuyi" path="res://main_theme.tres" id="8_u1v43"]
 [ext_resource type="Texture2D" uid="uid://bhspi84arotva" path="res://Textures/pause_pressed.png" id="9_3lm71"]
 [ext_resource type="Texture2D" uid="uid://bwrvgk11xwsni" path="res://Textures/pause_hover.png" id="9_g7f6c"]
-[ext_resource type="Texture2D" path="res://Textures/happy.png" id="4_dtdkw"]
 
 [node name="MainGameScene" type="Node2D"]
 
@@ -72,7 +71,12 @@ texture = ExtResource("4_dtdkw")
 
 [node name="DialogueManager" type="Node" parent="."]
 script = ExtResource("3_xkt7o")
-dialogue_json = ExtResource("6_yyi3k")
+json_folder_path = "res://jsons/"
+initial_scene = "Class1"
+
+[node name="Container" type="Container" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="MenuButton" type="MenuButton" parent="."]
 offset_right = 81.0
@@ -131,9 +135,3 @@ texture_hover = ExtResource("9_g7f6c")
 [connection signal="pressed" from="MenuButton/PauseMenu/Button" to="MenuButton" method="_on_button_pressed"]
 [connection signal="pressed" from="MenuButton/TextureButton" to="Textbox" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="MenuButton/TextureButton" to="MenuButton" method="_on_texture_button_pressed"]
-json_folder_path = "res://jsons/"
-initial_scene = "Class1"
-
-[node name="Container" type="Container" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
