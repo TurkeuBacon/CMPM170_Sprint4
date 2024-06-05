@@ -1,6 +1,5 @@
 {
 	"scene": "Boardwalk",
-	"background" : "boardwalk",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [

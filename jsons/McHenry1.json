@@ -1,6 +1,5 @@
 {
 	"scene": "McHenry1",
-	"background" : "mchenry",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [

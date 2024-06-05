@@ -15,12 +15,10 @@ var textDisplay: Label;
 var optionsScroll: ScrollContainer;
 var optionsArea: VBoxContainer;
 var frankie: Frankie;
-var background: Sprite2D;
 
 func _ready():
 	textbox = $"../Textbox";
 	frankie = $"../Frankie";
-	background = $"../background";
 	textDisplay = $"../Textbox/TextBackground/TextDisplay";
 	optionsScroll = $"../Textbox/TextBackground/OptionsScrollArea";
 	optionsArea = $"../Textbox/TextBackground/OptionsScrollArea/OptionsLayout";

@@ -11,17 +11,12 @@ const expression_paths: Dictionary = {
 	"crying": "res://Textures/sprites/crying.png",
 	"embarrassed": "res://Textures/sprites/embarrassed.png",
 	"excited": "res://Textures/sprites/excited.png",
-	"laughing": "res://Textures/sprites/excited.png",
-	"hopeful": "res://Textures/sprites/excited.png",
 	"thinking": "res://Textures/sprites/thinking.png",
-	"curious": "res://Textures/sprites/thinking.png",
 	"suprised": "res://Textures/sprites/suprised.png",
 	"upset": "res://Textures/sprites/upset.png",
-	"concerned": "res://Textures/sprites/upset.png",
 	"upsetTalk": "res://Textures/sprites/superTalk.png",
 	"waving": "res://Textures/sprites/waving.png",
-	"blushing": "res://Textures/sprites/blushing.png",
-	"neutral": "res://Textures/sprites/blushing.png"
+	"blushing": "res://Textures/sprites/blushing.png"
 };
 
 func _ready():
