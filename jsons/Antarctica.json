@@ -1,0 +1,74 @@
+{
+	"scene": "Antarctica",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"*You wander the icy tundra, alone. Nothing but the wind is there to comfort you.*",
+			"Hehe... I knew it. She said she would follow me anywhere, and here I am. Where is she? Nowhere to be found.",
+			"*you hear footsteps behind you in the distance*",
+			"Wh... what is that? Who is that?",
+			"It can't be! I... I don't believe it! Frankie?",
+			"'Hel....hello Protag-san.'",
+			"What are you doing out here?",
+			"'I... I said I would follow you anywhere... and... here... I... am...'",
+			"But why?",
+			"'You said I needed to try harder... so I tried...'"
+		],
+		"speeds": [
+			1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+		],
+		"options": ["You shouldn't have come here...", "I... I'm sorry. I was wrong."],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"'But protag-san, I love you! I love you and I need you to know it!'"
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_3": {
+		"lines": [
+			"Th-Th-Thank you..."
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["text_4"]
+	},
+	"text_4": {
+		"lines": [
+			"Where do we go from here? I would do anything for you, Protag-kun.",
+			"I know..."
+		],
+		"speeds": [
+			1, 1
+		],
+		"options": ["...and I'm sorry. I shouldn't have done this to you. I love you too.", "...and that's why we can't be together. I'm sorry, Frankie. This is where it ends."],
+		"next_dialogue": ["text_5", "text_6"]
+	},
+	"text_5": {
+		"lines": [
+			"GAME OVER: the 'Good' ending"
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	},
+	"text_6": {
+		"lines": [
+			"GAME OVER: Horrible Person Ending"
+		],
+		"speeds": [
+			1
+		],
+		"options": [],
+		"next_dialogue": ["END"]
+	}
+}
