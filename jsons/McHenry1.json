@@ -1,0 +1,151 @@
+{
+	"scene": "McHenry1",
+	"initial_dialogue": "text_1",
+	"text_1": {
+		"lines": [
+			"Oh gosh, I'm late for my study session with Frankie! I better hurry!",
+			"*After reaching McHenry, you enter the study room, and Frankie is already there*"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"worried", "neutral"
+		],
+		"options": ["Hey Frankie! Sorry I'm late. The loop buses am I right?", "Oh, hey Frankie. You're here early - not much else going on, huh?"],
+		"next_dialogue": ["text_2", "text_3"]
+	},
+	"text_2": {
+		"lines": [
+			"'No worries Protag-kun! I brought some snacks for us to share!'",
+			"'Do you like Oreos, or Pretzels?'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"happy", "curious"
+		],
+		"options": [["Oreos", "Pretzels"]],
+		"next_dialogue": ["text_4", "text_5"]
+	},
+	"text_3": {
+		"lines": [
+			"'Oh, hey. I was just excited to get working...'",
+			"'I even brought snacks for us, not that you even care...'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"neutral", "sad"
+		],
+		"options": ["Of course I care! I love snacks!", "Damn right I don't care. I don't even eat– I just smoke Marlboros and drink black coffee."],
+		"next_dialogue": ["text_6", "text_7"]
+	},
+	"text_4": {
+		"lines": [
+			"'Oh perfect! Oreos are my favorite!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_8"]
+	},
+	"text_5": {
+		"lines": [
+			"'Oh perfect! Pretzels are my favorite!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_8"]
+	},
+	"text_6": {
+		"lines": [
+			"'Great! I have Oreos and Pretzels! I knew you'd care!'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"happy"
+		],
+		"options": [],
+		"next_dialogue": ["text_8"]
+	},
+	"text_7": {
+		"lines": [
+			"'I think you should see someone, Protag-san.'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"concerned"
+		],
+		"options": [],
+		"next_dialogue": ["text_8"]
+	},
+	"text_8": {
+		"lines": [
+			"'Anyway, we should get working. The prompt for this split is 'meaningful'– what's something meaningful to you, Protag-kun?'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": ["Nothing, Frankie. I think we should just get this over with.", "I don't know. Friendship sure is meaningful! Just like us! Best friends", "Well, I've really come to value our... relationship. So I guess uhh... you! Haha..."],
+		"next_dialogue": ["text_9", "text_10", "text_11"]
+	},
+	"text_9": {
+		"lines": [
+			"'Understood. I guess we can just do it on like, sports or something. Y'know, since you're so athletic and strong...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"neutral"
+		],
+		"options": [],
+		"next_dialogue": ["Scene: McHenry2"]
+	},
+	"text_10": {
+		"lines": [
+			"'Oh! Haha, that's true. I guess we can just do it on friends then...'"
+		],
+		"speeds": [
+			1
+		],
+		"expressions": [
+			"laughing"
+		],
+		"options": [],
+		"next_dialogue": ["Scene: McHenry2"]
+	},
+	"text_11": {
+		"lines": [
+			"'Oh Protag-kun, you're so funny! I uhh... uhmmm... I really care about you too!'",
+			"'Let's meet and work on this project again soon!'"
+		],
+		"speeds": [
+			1, 1
+		],
+		"expressions": [
+			"blushing", "happy"
+		],
+		"options": [],
+		"next_dialogue": ["Scene: Dorm"]
+	}
+}
