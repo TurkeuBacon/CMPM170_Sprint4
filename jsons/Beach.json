@@ -1,5 +1,6 @@
 {
 	"scene": "Beach",
+	"location": "beach",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [

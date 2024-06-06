@@ -1,5 +1,6 @@
 {
 	"scene": "Movies",
+	"location":"movies",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [

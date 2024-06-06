@@ -15,7 +15,7 @@ const expression_paths: Dictionary = {
 	"hopeful": "res://Textures/sprites/excited.png",
 	"thinking": "res://Textures/sprites/thinking.png",
 	"curious": "res://Textures/sprites/thinking.png",
-	"suprised": "res://Textures/sprites/suprised.png",
+	"surprised": "res://Textures/sprites/suprised.png",
 	"upset": "res://Textures/sprites/upset.png",
 	"concerned": "res://Textures/sprites/upset.png",
 	"upsetTalk": "res://Textures/sprites/superTalk.png",

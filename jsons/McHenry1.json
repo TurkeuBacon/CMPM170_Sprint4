@@ -1,5 +1,6 @@
 {
 	"scene": "McHenry1",
+	"location": "mchenry",
 	"initial_dialogue": "text_1",
 	"text_1": {
 		"lines": [

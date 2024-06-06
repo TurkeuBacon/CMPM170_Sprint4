@@ -49,6 +49,7 @@ func _input(event):
 				show_options();
 
 func load_dialogue_json(json: JSON) -> Dialogue:
+	background.set_background(json.data.location)
 	dialogues = {};
 	var initial_dialogue_name = json.data.initial_dialogue;
 	add_dialogue(initial_dialogue_name, json.data);
@@ -71,7 +72,7 @@ func add_dialogue(key: String, json_data):
 			add_dialogue(next_dialogue, json_data);
 
 func show_options():
-	if(current_dialogue.options.size() == 0):
+	if(current_dialogue.options == []):
 		var next_name = current_dialogue.next_dialogue[0];
 		goto_next(next_name);
 		return;
