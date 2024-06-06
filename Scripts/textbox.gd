@@ -15,6 +15,7 @@ func type_text(text, speed, completion_callback: Callable) -> void:
 	text_display.text = "";
 	if(speed <= 0):
 		speed = 0.000001;
+	speed = 10;
 	for character in text:
 		if(cancel_typing_flag):
 			cancel_typing_flag = false;
