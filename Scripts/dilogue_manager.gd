@@ -81,6 +81,7 @@ func show_options():
 	optionsScroll.visible = true;
 	for i in range(current_dialogue.options.size()):
 		var optionText = current_dialogue.options[i];
+		print(current_dialogue.next_dialogue[i]);
 		var optionNext = current_dialogue.next_dialogue[i];
 		var optionButton = Button.new();
 		current_options.push_back(optionButton);

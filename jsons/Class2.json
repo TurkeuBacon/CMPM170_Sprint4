@@ -54,6 +54,6 @@
 			"happy", "thinking"
 		],
 		"options": ["Sure! That sounds fun!", "Uh... sure. I guess we can work together..."],
-		"next_dialogue": ["Scene: McHenry"]
+		"next_dialogue": ["Scene: McHenry1", "Scene: McHenry1"]
 	}
 }
