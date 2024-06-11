@@ -10,6 +10,9 @@
 		"speeds": [
 			1, 1
 		],
+		"expressions": [
+			"neutral", "neutral"
+		],
 		"options": ["Yea!", "You're gonna do great. You were practically made to eat clam chowder!"],
 		"next_dialogue": ["text_2", "text_2"]
 	},
@@ -23,6 +26,9 @@
 		"speeds": [
 			1, 1, 1, 1
 		],
+		"expressions": [
+			"neutral", "neutral", "neutral", "neutral"
+		],
 		"options": ["Try and speed up to win", "Sit back in awe"],
 		"next_dialogue": ["text_3", "text_4"]
 	}, 
@@ -33,6 +39,9 @@
 		],
 		"speeds": [
 			1, 1
+		],
+		"expressions": [
+			"neutral", "neutral"
 		],
 		"options": ["Let them win", "Sabotage them"],
 		"next_dialogue": ["text_4", "text_5"]
@@ -50,6 +59,9 @@
 		"speeds": [
 			1, 1, 1, 1, 1, 1, 1
 		],
+		"expressions": [
+			"neutral", "happy", "neutral", "happy", "neutral", "neutral", "neutral"
+		],
 		"options": [],
 		"next_dialogue": ["END"]
 	},
@@ -63,6 +75,9 @@
 		],
 		"speeds": [
 			1, 1, 1, 1, 1
+		],
+		"expressions": [
+			"neutral", "neutral", "neutral", "sad", "neutral"
 		],
 		"options": [],
 		"next_dialogue": ["END"]
